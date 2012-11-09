@@ -7,7 +7,7 @@ http://expressjs.com/
 
 Expressでは次のコマンドを実行すると、ひな形ができる。
 
-$ express -t ejs SampleOfExpress
+$ express -e SampleOfExpress
 
 $ cd SampleOfExpress
 
