@@ -8,10 +8,16 @@ var items = [
    { "text": "2nd Post" }
 ];
 
-
-
-
-//index.ejsを指定する。
+//index.ejsを指定し、indexをレンダリングする。
 exports.index = function(req, res){
-  res.render('index', { title: "Entry list", items: items });
+   res.render('index', { title: "Entry list", items: items });
 };
+
+//formボタンをしたら、form.ejsをレンダリング
+exports.form = function(req, res){
+   res.render('form', { title: 'New Entry' })
+};
+
+
+
+
