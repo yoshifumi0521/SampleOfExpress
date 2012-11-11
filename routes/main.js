@@ -18,6 +18,11 @@ exports.form = function(req, res){
    res.render('form', { title: 'New Entry' })
 };
 
-
+//creatが呼ばれたら、ホームにリダイレクトする。
+exports.create = function(req,res){
+   console.log(req.body.text);
+   //トップ画面にリダイレクトする。
+   res.redirect("/");
+};
 
 
